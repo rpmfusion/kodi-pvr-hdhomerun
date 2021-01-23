@@ -3,7 +3,7 @@
 %global kodi_codename Matrix
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        7.0.0
+Version:        7.1.0
 Release:        1%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
@@ -45,5 +45,8 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Fri Jan 22 2021 Michael Cronenworth <mike@cchtml.com> - 7.1.0-1
+- Version update
+
 * Thu Jan 14 2021 Michael Cronenworth <mike@cchtml.com> - 7.0.0-1
 - Initial RPM release
