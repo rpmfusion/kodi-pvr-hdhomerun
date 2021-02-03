@@ -4,7 +4,7 @@
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 Version:        7.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
 License:        GPLv2+
@@ -45,6 +45,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Wed Feb 03 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 7.1.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Fri Jan 22 2021 Michael Cronenworth <mike@cchtml.com> - 7.1.0-1
 - Version update
 
