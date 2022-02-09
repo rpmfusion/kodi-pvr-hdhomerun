@@ -3,8 +3,8 @@
 %global kodi_codename Matrix
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        7.1.0
-Release:        4%{?dist}
+Version:        19.0.2
+Release:        1%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
 License:        GPLv2+
@@ -45,6 +45,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Wed Feb 09 2022 Michael Cronenworth <mike@cchtml.com> - 19.0.2-1
+- Version update
+
 * Wed Feb 09 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 7.1.0-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
