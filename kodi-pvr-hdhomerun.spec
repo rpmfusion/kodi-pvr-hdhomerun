@@ -1,10 +1,10 @@
 %global kodi_addon pvr.hdhomerun
-%global kodi_version 19.0
-%global kodi_codename Matrix
+%global kodi_version 20.0
+%global kodi_codename Nexus
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        19.1.0
-Release:        2%{?dist}
+Version:        20.4.0
+Release:        1%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
 License:        GPLv2+
@@ -45,6 +45,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Mon Jan 30 2023 Michael Cronenworth <mike@cchtml.com> - 20.4.0-1
+- Version update
+
 * Sun Aug 07 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 19.1.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
   5.1
