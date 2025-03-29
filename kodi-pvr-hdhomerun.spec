@@ -3,8 +3,8 @@
 %global kodi_codename Omega
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        21.0.0
-Release:        4%{?dist}
+Version:        21.0.2
+Release:        1%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
 License:        GPLv2+
@@ -45,6 +45,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Sat Mar 29 2025 Leigh Scott <leigh123linux@gmail.com> - 21.0.2-1
+- Update to 21.0.2
+
 * Sat Mar 15 2025 Leigh Scott <leigh123linux@gmail.com> - 21.0.0-4
 - Rebuild for new libjsoncpp
 
