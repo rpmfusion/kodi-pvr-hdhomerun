@@ -3,16 +3,13 @@
 %global kodi_codename Omega
 
 Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
-Version:        21.0.2
-Release:        3%{?dist}
+Version:        21.0.4
+Release:        1%{?dist}
 Summary:        HDHomeRun PVR for Kodi
 
 License:        GPLv2+
 URL:            https://github.com/kodi-pvr/%{kodi_addon}/
 Source0:        %{url}/archive/%{version}-%{kodi_codename}/%{kodi_addon}-%{version}-%{kodi_codename}.tar.gz
-
-# https://github.com/kodi-pvr/pvr.hdhomerun/pull/181
-Patch0:         0001-fix-API-URL-changed.patch
 
 BuildRequires:  cmake3
 BuildRequires:  gcc-c++
@@ -48,6 +45,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Thu Sep 04 2025 Michael Cronenworth <mike@cchtml.com> - 21.0.4-1
+- Update to 21.0.4
+
 * Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 21.0.2-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
 
